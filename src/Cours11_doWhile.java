@@ -3,7 +3,19 @@ import java.util.Scanner;
 public class Cours11_doWhile {
     public Cours11_doWhile() {
         appuyerSurEspaceEtEnterPourContinuer_while();
+        appuyerSurEspaceEtEnterPourContinuer_Dowhile();
     }
+
+    private void appuyerSurEspaceEtEnterPourContinuer_Dowhile() {
+        String strSaisie;
+
+        //boucler sur cette question tant que l'usager n'a pas appuyée sur la barre d'espacement puis sur Enter.
+        do {
+            strSaisie = lireString("SVP appuyer sur la barre d'espacement puis sur Enter : ");
+        } while (!strSaisie.equals(" "));
+        System.out.println("Bravo d'avoir appuyé sur l'espace");
+    }
+
     private void appuyerSurEspaceEtEnterPourContinuer_while() {
         String strSaisie;
 
@@ -26,6 +38,7 @@ public class Cours11_doWhile {
 
         return reponse;
     }
+
     public static void main(String[] args) {
         new Cours11_doWhile();
     }
