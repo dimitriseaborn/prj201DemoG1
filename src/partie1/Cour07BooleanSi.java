@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cour07BooleanSi {
     public Cour07BooleanSi() {
 //        testerBoolean();

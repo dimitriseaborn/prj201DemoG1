@@ -1,4 +1,4 @@
-//Configurer intelliJ pour francais: file>settings>editor>natural language
+package partie1;//Configurer intelliJ pour francais: file>settings>editor>natural language
 
 public class Cour02IntroMethode {
 

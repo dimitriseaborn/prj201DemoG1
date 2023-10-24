@@ -1,6 +1,8 @@
+package partie1;
+
 public class Cour04ErreurExecution {
     public Cour04ErreurExecution() {
-        System.out.println("Cour04ErreurExecution");
+        System.out.println("partie1.Cour04ErreurExecution");
         int i;
         String strNb;
         strNb = "123g";

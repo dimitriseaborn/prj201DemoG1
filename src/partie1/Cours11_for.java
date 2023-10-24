@@ -1,3 +1,4 @@
+package partie1;
 
 public class Cours11_for {
     public Cours11_for() {

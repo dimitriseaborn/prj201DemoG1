@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cour11Exercices {
 //    o Trouver l’énoncé boolean java pour avoir true selon le cas (n et m sont des réels et c un caractère)
 //

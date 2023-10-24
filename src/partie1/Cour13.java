@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cour13 {
     public Cour13() {
         tester_inverserString();

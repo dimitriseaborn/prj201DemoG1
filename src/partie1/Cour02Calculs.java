@@ -1,4 +1,4 @@
-//ctrl+alt+l pour formatter le code
+package partie1;//ctrl+alt+l pour formatter le code
 
 public class Cour02Calculs {
     public Cour02Calculs() {

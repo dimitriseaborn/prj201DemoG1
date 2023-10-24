@@ -1,3 +1,5 @@
+package partie1;
+
 import java.util.Scanner;
 
 public class Cours08ClasseMath {

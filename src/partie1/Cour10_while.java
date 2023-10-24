@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cour10_while {
     public Cour10_while() {
         tester_compterDe1AN();

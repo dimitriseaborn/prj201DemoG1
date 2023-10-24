@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cours02AfficherDate {
     public static void main(String[] args) {
         java.util.Date date = new java.util.Date();

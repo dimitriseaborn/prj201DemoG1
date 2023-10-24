@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cours05DemoString {
     public Cours05DemoString() {
 //        jouerAvecChaineDeCaracteres();

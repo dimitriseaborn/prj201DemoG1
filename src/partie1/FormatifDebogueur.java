@@ -1,3 +1,5 @@
+package partie1;
+
 public class FormatifDebogueur {
     public FormatifDebogueur() {
         permutation();

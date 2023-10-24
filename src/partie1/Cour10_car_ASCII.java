@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cour10_car_ASCII {
     public Cour10_car_ASCII() {
     }

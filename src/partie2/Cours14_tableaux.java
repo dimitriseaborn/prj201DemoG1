@@ -1,3 +1,5 @@
+package partie2;
+
 public class Cours14_tableaux {
     public Cours14_tableaux() {
         jouerAvecTableau();

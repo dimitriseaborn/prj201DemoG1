@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cours03RetourMethode {
     public Cours03RetourMethode() {
         testerAddition();

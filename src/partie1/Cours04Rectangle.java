@@ -1,3 +1,5 @@
+package partie1;
+
 public class Cours04Rectangle {
     public Cours04Rectangle() {
         testerAireRectangle();
