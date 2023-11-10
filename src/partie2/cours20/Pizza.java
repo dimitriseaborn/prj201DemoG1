@@ -16,8 +16,8 @@ public class Pizza {
     //Pour qu'elles existent, la classe doit être instanciée
     //On les met private pour évier qu'elles soient modifiées à l'extérieur de la classe. On appelle ça l'encapsulation
     private final Coordonnee coordonnee;
-    private final int vitesse;
-    private final String couleur;
+    private int vitesse;
+    private String couleur;
 
     public Pizza() {
         this(X_DEFAUT, Y_DEFAUT); //this() fait référence au constructeur
@@ -30,7 +30,7 @@ public class Pizza {
     public Pizza(int x, int y, int vitesse, String couleur) {
         this.coordonnee = new Coordonnee();
         setXY(x, y); //important pour garder la cohérence
-        this.vitesse = vitesse; //variable locale est blanche et la variable d'instance est mauve
+        setVitesse(vitesse); //variable locale est blanche et la variable d'instance est mauve
         this.couleur = couleur; //le mot clé this fait référence à l'instance courante
     }
 
@@ -47,6 +47,24 @@ public class Pizza {
 
     public Pizza get() {
         return new Pizza(coordonnee.getX(), coordonnee.getY(), vitesse, couleur);
+    }
+
+    public void set(Pizza pizza) {
+        coordonnee.move(pizza.getX(), pizza.getY());
+        vitesse = pizza.vitesse; //Fait référence à la pizza reçue en argument
+        couleur = pizza.couleur; //comme on est dans la classe Pizza, pas besoin d'utiliser les accesseurs
+    }
+
+    public void setVitesse(int vitesse) {
+        if(vitesseEsValide(vitesse)) {
+            this.vitesse = vitesse;
+        } else {
+            throw new IllegalArgumentException("La vitesse " + vitesse +  " est invalide");
+        }
+    }
+
+    public static boolean vitesseEsValide(int vitesse) {
+        return vitesse >= 0;
     }
 
     public void avancerX() {
